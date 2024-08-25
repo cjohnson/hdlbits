@@ -1,7 +1,10 @@
+// https://hdlbits.01xz.net/wiki/Vector2
+
 `default_nettype none
-module top_module(
-  input [31:0] in,
-  output [31:0] out
+
+module top_module (
+    input  [31:0] in,
+    output [31:0] out
 );
   assign out[7:0]   = in[31:24];
   assign out[15:8]  = in[23:16];
